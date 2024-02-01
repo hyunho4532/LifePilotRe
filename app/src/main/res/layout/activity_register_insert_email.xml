@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.register.RegisterInsertEmailActivity">
+
+        <TextView
+            android:id="@+id/tv_register_lifepilot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="라이프 파일럿"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sejong_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="이메일을 입력해주세요."
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_lifepilot_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_lifepilot_subtitle" />
+
+        <TextView
+            android:id="@+id/tv_register_lifepilot_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sejong_bold"
+            android:text="% 진행하기 위해 사용자를 등록해주세요! %"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_lifepilot_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_lifepilot_title" />
+
+        <TextView
+            android:id="@+id/tv_register_email_introduce_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. 정확하고 솔직하게 답변해주세요."
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_email" />
+
+        <TextView
+            android:id="@+id/tv_register_email_introduce_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2. 이메일을 정확하게 입력해주세요!"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_email_introduce_first"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_email_introduce_first" />
+
+
+        <EditText
+            android:id="@+id/et_register_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/register_activity_form"
+            android:ems="10"
+            android:hint="이메일을 입력해주세요."
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_email_introduce_second"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_email_introduce_second" />
+
+        <TextView
+            android:id="@+id/tv_register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="비밀번호를 입력해주세요."
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/et_register_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_register_email" />
+
+        <TextView
+            android:id="@+id/tv_register_password_introduce_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1. 보안 상, 특수 문자를 포함한 비밀번호를 입력해주세요."
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_password"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_password" />
+
+        <TextView
+            android:id="@+id/tv_register_password_introduce_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2. 비밀번호를 쉽게 만들면, 보안상 안전하지 않을 수 있습니다."
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_password_introduce_first"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_password_introduce_first" />
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/register_activity_form"
+            android:ems="10"
+            android:hint="이메일을 입력해주세요."
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_register_password_introduce_second"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_password_introduce_second" />
+
+        <ImageView
+            android:id="@+id/iv_register_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintEnd_toEndOf="@+id/et_register_password"
+            app:layout_constraintTop_toBottomOf="@+id/et_register_password"
+            app:srcCompat="@drawable/activity_next_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
