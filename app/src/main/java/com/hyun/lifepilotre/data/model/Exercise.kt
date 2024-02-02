@@ -1,4 +1,4 @@
-package com.hyun.lifepilot.data.model
+package com.hyun.lifepilotre.data.model
 
 data class Exercise (
     val name: String

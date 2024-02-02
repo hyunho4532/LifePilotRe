@@ -6,9 +6,9 @@ import android.os.Bundle
 import androidx.activity.OnBackPressedCallback
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.hyun.lifepilot.data.model.Exercise
 import com.hyun.lifepilotre.R
 import com.hyun.lifepilotre.adapter.ExerciseAdapter
+import com.hyun.lifepilotre.data.model.Exercise
 import com.hyun.lifepilotre.databinding.ActivityRegisterSecondBinding
 import java.util.*
 
